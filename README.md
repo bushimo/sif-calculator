@@ -9,7 +9,7 @@
 ### 使用法
 
 ```javascript
-const sifCalculator = require('sif-calculator'); # commonJS/Webpack/Node.js;
+const sifCalculator = require('sif-calculator'); // commonJS/webpack/Node.js;
 ```
 
 ```html
