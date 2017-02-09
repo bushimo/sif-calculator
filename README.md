@@ -9,7 +9,11 @@
 ### 使用法
 
 ```javascript
-const sifCalculator = require('sif-calculator');
+const sifCalculator = require('sif-calculator'); # commonJS/Webpack/Node.js;
+```
+
+```html
+<script src="dist/sifCalculator.js"></script> <!-- window.sifCalculator -->
 ```
 
 #### LPについて
@@ -27,6 +31,18 @@ Rank 50以降はRankが10上がるごとに1ずつ増加していく。(例:Rank
 ```javascript
 const lp = sifCalculator.getFriendsByRank(101);
 ```
+
+#### EXPについて
+RankあたりのRank upに必要なEXPは以下の式で求めることができる。
+> Rank upに必要なEXP = 34.45 × 求めたいRank - 551
+
+ただし、Rank 33までは必要EXPの増加量が一定ではないため、上記の式で求めることはできない。   
+また、Rank 34以降でも経験値の増加量には若干のブレがあり、上記の式を用いても±2程度の誤差が生じる。  
+2014年7月31日のアップデートにより、Rank 100未満のRank upに必要なEXPが半分になった。   
+この措置は現在のRankから適用されるものであるため、既にRank 100以上の人には適用されない。 
+```javascript
+const exp = sifCalculator.getExpByRank(101);
+``` 
 
 ### テストを実行する
 ```bash

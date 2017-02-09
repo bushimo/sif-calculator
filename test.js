@@ -63,4 +63,16 @@ describe('calculator', () => {
         assert.strictEqual(calculator.getFriendsByRank(841), 99);
     });
 
+    it('Rank 3 should have 8 EXP', () => {
+        assert.strictEqual(calculator.getExpByRank(3), 8);
+    });
+
+    it('Rank 100 should have 2894 EXP', () => {
+        assert.strictEqual(calculator.getExpByRank(100), 2894);
+    });
+
+    it('Rank 203 should have 6442 EXP', () => {
+        assert.strictEqual(calculator.getExpByRank(203), 6442);
+    });
+
 });
