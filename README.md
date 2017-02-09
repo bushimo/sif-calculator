@@ -28,7 +28,7 @@ Rank 50以降はRankが10上がるごとに1ずつ増加していく。(例:Rank
 const lp = sifCalculator.getFriendsByRank(101);
 ```
 
-#### テストを実行する
+### テストを実行する
 ```bash
 npm install
 npm test
