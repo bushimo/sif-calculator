@@ -2,7 +2,6 @@ const round = require('lodash/round');
 
 /**
  * LPについて
- * 
  * @param  int rank Rank
  * @return int
  */
@@ -29,7 +28,6 @@ function getLpByRank(rank) {
 
 /**
  * 友達の上限について
- * 
  * @param  int rank Rank
  * @return int
  */
@@ -56,7 +54,6 @@ function getFriendsByRank(rank) {
 
 /**
  * EXPについて
- * 
  * @param  int rank Rank
  * @return int
  */
@@ -140,7 +137,7 @@ function getExpByRank(rank) {
 }
 
 module.exports = {
-    getLpByRank: getLpByRank,
-    getFriendsByRank: getFriendsByRank,
-    getExpByRank: getExpByRank
+    getLpByRank,
+    getFriendsByRank,
+    getExpByRank
 };

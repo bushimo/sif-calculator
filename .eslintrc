@@ -1,18 +1,3 @@
 {
-  "parserOptions": {
-    "ecmaFeatures": {
-      "es6": true,
-      "node": true
-    }
-  },
-  "env": {
-    "es6": true
-  },
-  "rules": {
-    "no-unused-vars": 1,
-    "no-use-before-define": 1,
-    "no-unreachable": 1,
-    "no-else-return": 1,
-    "no-var": 1
-  }
+  "extends": ["kotori"]
 }
